@@ -26,8 +26,12 @@ public class App {
 		});
 		
 		System.out.println("Print the array sorted in App - START");
-		for (WordCount c: counts) {
-			System.out.println(c.getWord() + " " + c.getCount());
+	//	for (WordCount c: counts) {
+	//System.out.println(c.getWord() + " " + c.getCount());
+	
+	        for (int i =0; i<counts.length && i<10 ;i++){
+			
+			System.out.println(counts[i].getWord()+ " "+counts[i].getCount());
 		}
 		System.out.println("Print the array sorted in App - END");
 		
