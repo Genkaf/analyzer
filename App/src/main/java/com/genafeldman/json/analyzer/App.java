@@ -8,7 +8,7 @@ import java.util.List;
 public class App {
 	public static void main(String[] args) {
 		JsonParser p = new JsonParser();
-		List<JsonSentence> listOfSentences = p.getListOfSentences("C:\\temp\\superman");
+		List<JsonSentence> listOfSentences = p.getListOfSentences(args[0]);
 
 		for (JsonSentence s : listOfSentences) {
 			System.out.println(s);
